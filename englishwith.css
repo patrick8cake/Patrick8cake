@@ -257,16 +257,15 @@ main {
 }
 
 .page-3 {
-    width: 50%;
+    width: 100%;
 }
 
 .page-4 {
-    width: 50%;
+    width: 0%;
 }
 
 .page-3-page-4 {
     display: flex;
-    z-index: 4;
 }
 
 .page-5-page-6 {
@@ -443,7 +442,7 @@ hr {
     
     .page-3 {
         margin: auto;
-        width: 50%;
+        width: 70%;
     }
     
     .page-3-inner-div {
