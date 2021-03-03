@@ -331,7 +331,7 @@ main {
     background-color: #df2c2c;
     opacity: 0.7;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 10em;
 }
 
 .page-11 {
@@ -365,11 +365,10 @@ main {
     z-index: 1;
 }
 
-
-}
 .prices-page-1 p {
     color: black;
 }
+
 hr {
     height: 2px;
     border-color: red;
@@ -380,19 +379,23 @@ hr {
     opacity: 0.7;
 }
 
+.hr-page-8 {
+    width: 50%;
+}
+
+
 /* =================
 	Media Query 
    ================= */
+
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
     }
-    
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 10fr) 1fr;
     }
-    
     nav {
         all: unset;
         grid-column: 3 / 4;
@@ -400,22 +403,18 @@ hr {
         justify-content: flex-end;
         align-items: center;
     }
-    
     nav a {
         opacity: 1;
         color: black;
     }
-    
     nav ul {
         display: flex;
         justify-content: flex-end;
     }
-    
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
     }
-    
     .page-1-page-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -423,7 +422,6 @@ hr {
         max-height: 70vh;
         overflow: hidden;
     }
-    
     @media screen and (min-width: 600px) {
         h1 {
             font-size: 2.5em;
@@ -432,55 +430,45 @@ hr {
             font-size: 1em;
         }
     }
-    
     .page-3-page-4 {
         margin-top: 3em;
         margin-bottom: 4em;
         display: flex;
         flex-direction: row;
     }
-    
     .page-3 {
         margin: auto;
         width: 70%;
     }
-    
     .page-3-inner-div {
         width: 70%;
         margin: auto;
     }
-    
     .page-4 {
         width: 50%;
     }
-    
     .img-1 {
         object-fit: contain;
         width: 100%;
         margin-bottom: 0;
         padding: 0%;
     }
-    
     .page-5-page-6 {
         display: flex;
         height: 60vh;
     }
-    
     .page-5-box {
         margin-top: 2em;
         width: 50%;
         margin: auto;
     }
-    
     .page-6-container {
         width: 50%;
         margin: auto;
     }
-    
     .background-div2 {
         background-image: none;
     }
-    
     .page-7-grid {
         display: grid;
         place-items: center;
@@ -488,13 +476,11 @@ hr {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(100px, auto);
     }
-    
     .page-8 {
         margin: auto;
         font-size: 2em;
         width: 60%;
     }
-    
     .page-8-h2 {
         color: white;
         background: #df2c2c;
@@ -502,34 +488,27 @@ hr {
         width: 40%;
         margin: auto;
     }
-    
     .page-8-p {
         font-size: 1em;
     }
-    
     .page-9-1 {
         display: flex;
         margin-bottom: 0em;
     }
-    
     .image-page-9 {
         width: 50%;
         margin-bottom: 0;
     }
-    
     .page-9-div-1 {
         width: 50%;
     }
-    
     .page-9-p {
         font-size: 3em;
     }
-    
     .page-9-div-2 {
         display: flex;
         justify-content: space-between;
     }
-    
     .page-9-p-sub-1,
     .page-9-p-sub-2,
     .page-9-p-sub-3 {
@@ -540,15 +519,12 @@ hr {
         padding-top: 2em;
         padding-bottom: 3em;
     }
-    
     .page-10 {
         display: flex;
     }
-    
     .page-10-div-image {
         width: 50%;
     }
-    
     .page-10-opacity-div {
         width: 50%;
         height: 100%;
@@ -556,24 +532,27 @@ hr {
     }
 }
 
+
 /* =================
     navigation
     ============ */
+
 header {
     background-color: aqua;
     text-align: center;
     position: -webkit-sticky;
     /* what is webkit stickty https://www.w3schools.com/css/css_positioning.asp */
-    
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 999;
     height: 6em;
 }
+
 .nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     position: absolute;
     top: 0;
@@ -583,6 +562,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -597,17 +577,21 @@ header {
     -o-border-radius: 2px;
     position: relative;
 }
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     content: ' ';
     position: absolute;
 }
+
 .nav-toggle-label span::before {
     bottom: 7px;
 }
+
 .nav-toggle-label span::after {
     top: 7px;
 }
+
 nav {
     position: absolute;
     text-align: left;
@@ -626,16 +610,19 @@ nav {
     -ms-transition: transform 400ms ease-in-out;
     -o-transition: transform 400ms ease-in-out;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 nav li {
     margin-bottom: 1em;
     margin-left: 1em;
     list-style: none;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -648,9 +635,11 @@ nav a {
     -ms-transition: opacity 150ms ease-in-out;
     -o-transition: opacity 150ms ease-in-out;
 }
+
 nav a:hover {
     color: white;
 }
+
 .nav-toggle:checked~nav {
     transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -658,6 +647,7 @@ nav a:hover {
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
 }
+
 .nav-toggle:checked~nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
@@ -666,20 +656,18 @@ nav a:hover {
     -ms-transition: opacity 250ms ease-in-out 250ms;
     -o-transition: opacity 250ms ease-in-out 250ms;
 }
+
 @media screen and (min-width:800px) {
     .nav-toggle-label {
         display: none;
     }
-    
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
     }
-    
     .logo {
         grid-column: 2 / 3;
     }
-    
     nav {
         all: unset;
         grid-column: 3 / 4;
@@ -687,22 +675,18 @@ nav a:hover {
         justify-content: flex-end;
         align-items: center;
     }
-    
     nav ul {
         display: flex;
         justify-content: flex-end;
     }
-    
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
     }
-    
     nav a {
         opacity: 1;
         position: relative;
     }
-    
     nav a::before {
         content: '';
         display: block;
@@ -724,7 +708,6 @@ nav a:hover {
         -ms-transition: transform ease-in-out 25ms;
         -o-transition: transform ease-in-out 25ms;
     }
-    
     nav a:hover::before {
         transform: scale(1, 1);
         -webkit-transform: scale(1, 1);
