@@ -290,6 +290,11 @@ main {
     padding-top: 1em;
 }
 
+.page-7-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .page-8 {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -469,12 +474,12 @@ hr {
     .background-div2 {
         background-image: none;
     }
-    .page-7-grid {
-        display: grid;
-        place-items: center;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: minmax(100px, auto);
+    .page-7-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5em;
+        padding-right: 5em;
     }
     .page-8 {
         margin: auto;
