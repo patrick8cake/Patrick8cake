@@ -156,6 +156,8 @@ p {
     font-size: 1.5em;
 }
 
+.page-8-p {}
+
 .page-9-h2 {
     margin: 2em;
     color: #d13fd6;
@@ -203,6 +205,10 @@ p {
 
 .page-10-p {
     margin: 0;
+}
+
+.page-10-a {
+    text-decoration: none;
 }
 
 .page-11-h2 {
@@ -257,15 +263,16 @@ main {
 }
 
 .page-3 {
-    width: 100%;
+    width: 50%;
 }
 
 .page-4 {
-    width: 0%;
+    width: 50%;
 }
 
 .page-3-page-4 {
     display: flex;
+    z-index: 4;
 }
 
 .page-5-page-6 {
@@ -288,11 +295,6 @@ main {
 
 .page-6-container {
     padding-top: 1em;
-}
-
-.page-7-div {
-    display: flex;
-    flex-direction: column;
 }
 
 .page-8 {
@@ -336,7 +338,7 @@ main {
     background-color: #df2c2c;
     opacity: 0.7;
     padding-top: 2em;
-    padding-bottom: 10em;
+    padding-bottom: 2em;
 }
 
 .page-11 {
@@ -382,10 +384,6 @@ hr {
     margin-top: 3em;
     margin-bottom: 3em;
     opacity: 0.7;
-}
-
-.hr-page-8 {
-    width: 50%;
 }
 
 
@@ -443,7 +441,7 @@ hr {
     }
     .page-3 {
         margin: auto;
-        width: 70%;
+        width: 50%;
     }
     .page-3-inner-div {
         width: 70%;
@@ -474,12 +472,12 @@ hr {
     .background-div2 {
         background-image: none;
     }
-    .page-7-div {
+    .page-7-grid {
         display: flex;
-        flex-direction: row;
+        align-content: center;
         justify-content: space-between;
-        padding-left: 5em;
-        padding-right: 5em;
+        padding-left: 2em;
+        padding-bottom: 2em;
     }
     .page-8 {
         margin: auto;
