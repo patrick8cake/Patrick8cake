@@ -20,11 +20,11 @@ body {
 }
 
 .page-3 {
-    background-image: url(background4.png);
+    background-image: url(images/background4.png);
 }
 
 .page-3-page-4 {
-    background-image: url(backgroundcat.png);
+    background-image: url(images/backgroundcat.png);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .background-kids-page {
-    background-image: url(kidspage.png);
+    background-image: url(images/kidspage.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -63,14 +63,14 @@ body {
 }
 
 .page-11 {
-    background-image: url(blogback.png);
+    background-image: url(images/blogback.png);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
 }
 
 .prices-page-2 {
-    background-image: url(boys-286245_1280.jpg);
+    background-image: url(images/boys-286245_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
