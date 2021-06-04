@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/html" href="price.html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJ8MG8J1B8"></script>
     <script>
@@ -20,6 +23,7 @@
 
         gtag('config', 'G-JJ8MG8J1B8');
     </script>
+    <!-- end google analystic-->
 
     <title> English with Patrick</title>
 
@@ -31,22 +35,58 @@
 
 
         <header>
-            <img class="logo" src="images/logo.png">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
             <nav>
-                <ul>
-                    <li><a href="#page-1">Home</a></li>
-                    <li><a href="#page-3">About Me</a></li>
-                    <li><a href="#page-5">Classes</a></li>
-                    <!-- <li><a href="#">Videos</a></li> -->
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#prices">prices</a></li>
-                    <li><a href="#page-10"> Contact Me</a></li>
-                </ul>
+                <div class="nav-center">
+                    <!-- Nav Header-->
+                    <div class="nav-header">
+                        <img src="logo.png" class="logo" alt="logo">
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- links -->
+                    <div class="links-container">
+
+                        <ul class="links">
+                            <li>
+                                <a href="#page-1">home</a>
+                            </li>
+                            <li>
+                                <a href="#page-3">about me</a>
+                            </li>
+                            <li>
+                                <a href="#page-5">classes</a>
+                            </li>
+
+                            <li>
+                                <a href="#page-10">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- social media -->
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/English-with-Patrick-106313171417748/">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/englishwithpatrick/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/patrick-denison-51761748/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
+
         </header>
 
 
@@ -312,11 +352,6 @@
                     <p class="page-10-p">englishwithpatrick</p>
                     <h3 class="page-10-h3">Email Address</h3>
                     <p class="page-10-p">englishwithpatrick@outlook.com</p>
-                    <a class="page-10-a" href="tel:00447802395964"> Call us on +44780 2395964</a>
-                    <form action="">
-                        <input type="text" name="email" id="" placeholder="email...">
-                        <textarea name="message" id="" cols="30" rows="5" placeholder="write message"></textarea>
-                    </form>
 
 
                 </div>
@@ -329,7 +364,7 @@
 
 
     </div>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
