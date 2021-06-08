@@ -107,6 +107,11 @@ Navbar
 ===============
 */
 
+header {
+    width: 100%;
+    margin-top: -3em;
+}
+
 nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
